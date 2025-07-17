@@ -37,7 +37,7 @@ class Command(BaseCommand):
         for user in users:
             team.members.add(user)
 
-        # Create activities
+        # Create activities added with unique IDs
         activities = [
             Activity(_id=ObjectId(), user=users[0], activity_type='Cycling', duration=timedelta(hours=1)),
             Activity(_id=ObjectId(), user=users[1], activity_type='Crossfit', duration=timedelta(hours=2)),
