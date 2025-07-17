@@ -19,6 +19,7 @@ class Command(BaseCommand):
         db.activity.drop()
         db.leaderboard.drop()
         db.workouts.drop()
+        
 
         # Create users
         users = [
